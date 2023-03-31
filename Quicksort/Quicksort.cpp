@@ -56,7 +56,7 @@ void q_short(int low, int high)
 
 	while (i <= j)					//langkah 10
 	{
-	//Search for an element greater than pivot
+						//Search for an element greater than pivot
 
 		while ((arr[i] <= pivot) && (i <= high))	//langkah 5
 		{
@@ -94,4 +94,17 @@ void q_short(int low, int high)
 	q_short(j + 1, high);							//langkah 13
 
 
+}
+void display() {
+	cout << "\n------------------" << endl;
+	cout << "Sorted Array" << endl;
+	cout << "------------------" << endl;
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
+	}
+
+	cout << "\n\nNumber of comparasions: " << cmp_count << endl;
+	cout << "Number of data movements: " << mov_count << endl;
 }
