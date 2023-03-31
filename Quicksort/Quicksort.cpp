@@ -3,7 +3,7 @@ using namespace std;
 
 //array of integers to hold values
 int arr[10];
-int cap_count = 0; //number of comparasion
+int cmp_count = 0; //number of comparasion
 int mov_count = 0; //number of data movement
 int n;
 
@@ -107,4 +107,14 @@ void display() {
 
 	cout << "\n\nNumber of comparasions: " << cmp_count << endl;
 	cout << "Number of data movements: " << mov_count << endl;
+}
+int main()
+{
+
+	input();
+	//sort the array using quick sort
+	q_short(0, n - 1);
+	display();
+	system("pause");
+	return 0;
 }
