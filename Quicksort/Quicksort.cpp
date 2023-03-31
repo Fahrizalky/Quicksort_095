@@ -50,7 +50,11 @@ void q_short(int low, int high)
 	//One containing elements less that or equal to pivot
 	//Outher conntainning elements greather than pivot 
 
-	pivot = arr[low];				//langkah 2
+	pivot = arr[low];	//langkah 2			
+	i = low + 1;		//langkah 3
+	
+
+
 
 
 
